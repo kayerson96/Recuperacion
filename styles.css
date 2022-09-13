@@ -19,7 +19,10 @@ a {
 }
 
 .contenido-producto {
-    background-color: red;
-    color: red;
+   justify-content: center;
+   text-align: center;
+   height: 100%;
+   width: 80%;
+   margin: auto;
 }
-        
+
