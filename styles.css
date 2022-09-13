@@ -1,0 +1,25 @@
+.cajaPrincial{
+    gap: 40px;
+} 
+    .cajas {
+    text-align: center;
+    } 
+    .card-img-top {
+    height: 200px;
+    width: 200px;
+   }
+    .card-text {
+    text-align: center;
+    }
+            .card-title{
+                text-align: center;
+            }
+a {
+   color: white;
+}
+
+.contenido-producto {
+    background-color: red;
+    color: red;
+}
+        
