@@ -5,6 +5,11 @@ function generarPDF(){
     let bebida = document.getElementById('bebidaham').value;
     let postre = document.getElementById('postreham').value;
     let nombre = document.getElementById('nombreham').value;
+    let siPapas = document.getElementById('esteessi').value;
+    if ()
+    
+
+
  
     var documentoPDF = new jsPDF();
     documentoPDF.setFontSize(20);
