@@ -5,8 +5,12 @@ function generarPDF(){
     let bebida = document.getElementById('bebidaham').value;
     let postre = document.getElementById('postreham').value;
     let nombre = document.getElementById('nombreham').value;
-    let siPapas = document.getElementById('esteessi').value;
-    if ()
+    let siPapas = document.getElementById('esteesSi').value;
+    if (siPapas.checked == true){
+        siPapas = "Si";
+    }else{
+        siPapas = "No";
+    }
     
 
 
@@ -22,5 +26,6 @@ function generarPDF(){
     documentoPDF.text(20, 50, 'Proteina: ' + proteina);
     documentoPDF.text(20, 60, 'Bebida: ' + bebida);
     documentoPDF.text(20, 70, 'Postre: ' + postre);
+    documentoPDF.text(20, 80, 'Porción de Papas: ' + siPapas);
     documentoPDF.save('Satisfaccion');
 }
