@@ -35,7 +35,7 @@
 
       <section class="contenido-producto">
         <h2>Selecione el Tipo de Salchicha</h2>
-      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="salchichaspapas">
           <option selected>Seleccione tipo de Salchicha</option>
           <option value="1">Ranchera</option>
           <option value="2">Tradicional</option>
@@ -43,7 +43,7 @@
         </select>
       
         <h2>Selecione un tipo de Bebida</h2>
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="bebidasalchi">
             <option selected>Seleccione un tipo de Bebida</option>
             <option value="1">CocaCola</option>
             <option value="2">Pepsi</option>
@@ -52,7 +52,7 @@
           </select>
       
           <h2>Selecione un tipo de Postre</h2>
-          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="postresalchi">
               <option selected>Seleccione un tipo de Postre</option>
               <option value="1">Maracuya</option>
               <option value="2">Fresa</option>
@@ -60,7 +60,7 @@
             </select>
       
             <h2>Para Cuantas Persona</h2>
-            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="personassalchi">
                 <option selected>Para Cuantas Personas</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -70,25 +70,25 @@
       
               <h2>Datos</h2>
               </div>
-              <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Nombre Completo" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Nombre Completo" aria-describedby="basic-addon1" id="nombresalchi">
             </div>
       
             <h2>Dirección</h2>
           </div>
-          <input type="text" class="form-control" placeholder="Dirección" aria-label="Dirección" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="Dirección" aria-label="Dirección" aria-describedby="basic-addon1" id="direccionsalchi">
         </div>
        <!-- se agrego los checks -->
        <h2>Desea Adicionar Papas</h2>
        
     <label for="">
         <div class="form-check ">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="esteessi" value="option1" checked>
+          <input class="form-check-input" type="radio" name="exampleRadios" id="" value="option1" checked>
           <label class="form-check-label" for="exampleRadios1">
             NO
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="esteesno" value="option2">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="Sisalchi" value="option2">
           <label class="form-check-label" for="exampleRadios2">
             SI
           </label>
@@ -96,7 +96,7 @@
     </label>
         <br>
         <br>
-        <button onclick="generarPDF()" class="btn btn-primary">Generar PDF</button>
+        <button onclick="generaarPDF()" class="btn btn-primary">Generar PDF</button>
       
       <div class="botonesRangos text-center">
           <h2>Que tan satisfecha se encuentra con el Menú</h2>
