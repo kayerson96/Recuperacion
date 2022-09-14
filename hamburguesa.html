@@ -37,27 +37,27 @@
 
 <section class="contenido-producto">
     <h2>Selecione el Tipo de proteina</h2>
-      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="proteinaham">
           <option selected>Open this select menu</option>
-          <option value="2">Pollo</option>
-          <option value="3">Carne</option>
+          <option value="Pollo">Pollo</option>
+          <option value="Carne">Carne</option>
         </select>
       
         <h2>Selecione un tipo de Bebida</h2>
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="bebidaham">
             <option selected>Open this select menu</option>
-            <option value="1">CocaCola</option>
-            <option value="2">Pepsi</option>
-            <option value="3">Postobon</option>
-            <option value="4">Pony Malta</option>
+            <option value="CocaCola">CocaCola</option>
+            <option value="Pepsi">Pepsi</option>
+            <option value="Postobon">Postobon</option>
+            <option value="Pony-Malta">Pony Malta</option>
           </select>
       
           <h2>Selecione un tipo de Postre</h2>
-          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="postreham">
               <option selected>Open this select menu</option>
-              <option value="1">Maracuya</option>
-              <option value="2">Fresa</option>
-              <option value="3">Coco</option>
+              <option value="Maracuya">Maracuya</option>
+              <option value="Fresa">Fresa</option>
+              <option value="Coco">Coco</option>
             </select>
       
             <h2>Para Cuantas Persona</h2>
@@ -71,7 +71,7 @@
       
               <h2>Datos</h2>
               </div>
-              <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Nombre Completo" aria-describedby="basic-addon1">
+              <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Nombre Completo" aria-describedby="basic-addon1" id="nombreham">
             </div>
       
             <h2>Dirección</h2>
@@ -107,6 +107,7 @@
         <h2>Cual es su nivel de satisfaccion en terminos generales</h2>
         <input type="range" min="1" max="5" id="satisfaccion">
       </div>
+      <div id="graficos"></div>
         <button onclick="generarGrafico()" class="btn btn-success">Generar gráficos</button>
       
  </section>
@@ -318,5 +319,6 @@
    <script src="jsPDF-1.3.2\dist\jspdf.min.js"></script>
    <script src="PDF.JS"></script>
    <script src="Grafica.js"></script>
+   <script src="jsPDF-1.3.2\dist"></script>
 
 </html>

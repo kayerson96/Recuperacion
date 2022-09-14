@@ -1,18 +1,21 @@
 function generarPDF(){
 
     // Variables para obtener los datos de los campos
-    let pedido = document.getElementById('num41').value;
-    let completo = document.getElementById('nombre2').value;
-    let direccion = document.getElementById('direccion3').value;
+    let proteina = document.getElementById('proteinaham').value;
+    let bebida = document.getElementById('bebidaham').value;
+    let postre = document.getElementById('postreham').value;
+    let nombre = document.getElementById('nombreham').value;
  
     var documentoPDF = new jsPDF();
     documentoPDF.setFontSize(20);
     documentoPDF.text(15, 15, 'Reporte de Ventas');
     documentoPDF.setFontSize(12);
     documentoPDF.text(20, 30, 'Fecha: ' + new Date());
+    documentoPDF.setFontSize(15);
+    documentoPDF.text(60, 40, 'Gracias por tu Compra ' + nombre);
     documentoPDF.setFontSize(10);
-    documentoPDF.text(20, 40, 'pedido: ' + pedido);
-    documentoPDF.text(20, 50, 'completo: ' + completo);
-    documentoPDF.text(20, 60, 'direccion: ' + direccion);
+    documentoPDF.text(20, 50, 'Proteina: ' + proteina);
+    documentoPDF.text(20, 60, 'Bebida: ' + bebida);
+    documentoPDF.text(20, 70, 'Postre: ' + postre);
     documentoPDF.save('Satisfaccion');
 }
