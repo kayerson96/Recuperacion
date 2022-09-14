@@ -1,8 +1,8 @@
 function generarGrafico(){
     let espacio =document.getElementById('graficos');
-    let valor1 =document.getElementById('satisfecho').value;
-    let valor2 =document.getElementById('llamativo').value;
-    let valor3 =document.getElementById('satisfaccion').value;
+    let valor1 =document.getElementById('proteinaham').value;
+    let valor2 =document.getElementById('bebidaham').value;
+    let valor3 =document.getElementById('postreham').value;
     
     Plotly.newPlot(espacio, [{
         x: [valor1, valor3],
